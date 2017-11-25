@@ -1,0 +1,34 @@
+#include <msp430.h>
+
+unsigned int adc_value;
+float Temp;
+float Tf;
+void main(void)
+{
+  WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
+  P1DIR |= BIT0;
+  REFCTL0 &= ~REFMSTR;      //Reset REFMSTR
+  ADC12CTL0 = ADC12SHT0_4+ADC12REFON+ADC12REF2_5V+ADC12ON; //
+  ADC12CTL1=ADC12SHP; //Initialize control register
+  ADC12MCTL0 = ADC12SREF_1+ADC12INCH0; //Set conversion Memory to Control Register
+  P6SEL |= BIT0; //ADC Input
+  ADC12IE = BIT0; //enable interrupt
+  ADC12CTL0 |= ADC12ENC; //enable conversion
+
+ while (1)
+  {
+  ADC12CTL0 |= ADC12SC; // Start conversion
+  __bis_SR_register(LPM0_bits + GIE);
+  __no_operation(); // SET BREAKPOINT HERE
+  }
+
+}
+
+// ADC10 interrupt service routine
+#pragma vector = ADC12_VECTOR
+__interrupt void ADC12_ISR(void)
+{
+    P1OUT ^= BIT0;
+adc_value = ADC12MEM0;
+
+}
