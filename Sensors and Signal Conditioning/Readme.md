@@ -5,7 +5,6 @@ Authors: Ben Jukus and Ryan Drexel
 
 -Timer Configuration
 -Analog to Digital Converter
--UART
 -References
 
 ===============
@@ -55,9 +54,6 @@ Authors: Ben Jukus and Ryan Drexel
 	or cases where that level of accuracy is not required. Power, time, and memory can be saved by excluding the lsb calculation.
 
 	In the format [xxxxABCD EFGHIJKL], if the lsb is disregardded/not calculated, data accuracy is limited to (Vin*0.0625) or Vin*(2^-4).
-======
-|UART|
-======
 
 =============
 |REFERENCES|

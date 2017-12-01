@@ -7,6 +7,7 @@ Authors: Ben Jukus and Ryan Drexel
 -RGB LED
 -LCD Display
 -Implementation
+-References
 
 ============
 |LCD Driver|
@@ -47,3 +48,11 @@ onto the LCD display output.
 ===============
 This code can be utilized and implemented on a variety of different projects/applications. The code is compatible with virtually any sensor with an analog output
 as long as the sensor fits the specifications of the MSP430. Only minor calculations need to be changed in order to read any sensor with this code.
+
+============
+|References|
+============
+Help from:
+	Russell Trafford
+	Jessica Wozniak
+	Ryan Hare
