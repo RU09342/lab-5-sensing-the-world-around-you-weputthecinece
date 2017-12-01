@@ -24,17 +24,23 @@ LEDs' change
 __________________________________________________________________
 LED brightness approximation with respect to temp. approximation  |
 								  |
-	40*F	55*F	70*F	85*F	100*F			  |
-  -------------------------------------------			  |
-R| 	0%	100%	100%	75%	100%			  |			
-G|	0%	0%	0%	50%	100%			  |
-B|	100%	100%	0%	0%	0%			  |
+Temperature ('F)	LED color				  |
+				  				  |
+	>90		yellow					  |
+	80-90		orange					  |
+	70-80		red					  |
+	60-70		purple					  |
+	50-60		dark blue				  |
+	40-50		blue					  |
+	30-40		light blue				  |
+	<30		ice (white with blue)			  |
 __________________________________________________________________|
 
 =============
 |LCD Display|
 =============
-This portion of the lab made use of the MSP430FR6989's LCD display in order to produce a human-legible output for the reading of a temperature sensor.
+This portion of the lab made use of the MSP430FR6989's LCD display in order to produce a human-legible output for the reading of a temperature sensor. All that had to be done was translating the input of the ADC 
+onto the LCD display output.
 
 ===============
 |Implementaion|
