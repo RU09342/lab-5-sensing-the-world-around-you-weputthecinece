@@ -7,18 +7,17 @@ Authors: Ben Jukus and Ryan Drexel
 -Analog to Digital Converter
 -References
 
-===============
-|Timer Config.|
-===============
+# Timer Config.
+
 	The clock used in this code is configured:
  
 		TA0CTL   += TASSEL_1	Auxiliary Clock (32 KHz)
 		TA0CTL   += MC_1	Up-mode	
 		CCR0 = 32767
 			Interrupt triggers once per second (1 Hz)
-=====
-|ADC|
-=====
+
+# ADC
+
 	The ADC in this project is 12 bits. This means the resolution is Vin*(2^-12) = Vin*(0.000244140625)
 	This section of the README covers both the 12 and 10 bit ADC usable by the MSP430FR6989 
 
@@ -55,9 +54,8 @@ Authors: Ben Jukus and Ryan Drexel
 
 	In the format [xxxxABCD EFGHIJKL], if the lsb is disregardded/not calculated, data accuracy is limited to (Vin*0.0625) or Vin*(2^-4).
 
-=============
-|REFERENCES|
-=============
+
+# REFERENCES
 	Help from:
 		Russell Trafford
 		Nick Gorab
