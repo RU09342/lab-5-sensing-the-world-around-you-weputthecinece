@@ -26,23 +26,23 @@ LEDs' change
 LED brightness approximation with respect to temp. approximation  |
 ---								  								  
 								  
-Temperature ('F)	LED color				  |
+Temperature ('F)	LED color				  
 								  
-	>90		yellow					  |
+	>90		yellow					  
 								  
-	80-90		orange					  |
+	80-90		orange					  
 	
-	70-80		red					  |
+	70-80		red					  
 	
-	60-70		purple					  |
+	60-70		purple					  
 	
-	50-60		dark blue				  |
+	50-60		dark blue				  
 	
-	40-50		blue					  |
+	40-50		blue					  
 	
-	30-40		light blue				  |
+	30-40		light blue				  
 	
-	<30		ice (white with blue)			  |
+	<30		ice (white with blue)			  
 	
 ---
 
