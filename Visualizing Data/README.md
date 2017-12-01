@@ -22,20 +22,29 @@ for this assignment, and the LED changes color with respect to the temperature (
 
 To do this, all that had to be done with the ADC reading is change the pulse width of R, G, and B with simple math based on the temperature range. The chart below shows the gist of the 
 LEDs' change
-__________________________________________________________________
+---
 LED brightness approximation with respect to temp. approximation  |
-								  |
+---								  								  
+								  
 Temperature ('F)	LED color				  |
-				  				  |
+								  
 	>90		yellow					  |
+								  
 	80-90		orange					  |
+	
 	70-80		red					  |
+	
 	60-70		purple					  |
+	
 	50-60		dark blue				  |
+	
 	40-50		blue					  |
+	
 	30-40		light blue				  |
+	
 	<30		ice (white with blue)			  |
-__________________________________________________________________|
+	
+---
 
 
 # LCD Display
