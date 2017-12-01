@@ -4,7 +4,9 @@ Authors: Ben Jukus and Ryan Drexel
 ***CONTENTS***
 
 -Timer Configuration
+
 -Analog to Digital Converter
+
 -References
 
 # Timer Config.
